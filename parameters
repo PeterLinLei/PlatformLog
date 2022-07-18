@@ -1,0 +1,5 @@
+dbDriver        com.mysql.jdbc.Driver
+dbUrl           jdbc:mysql://localhost:3306/portal
+dbUser          root
+
+

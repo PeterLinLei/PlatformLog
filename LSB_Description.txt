@@ -1,0 +1,125 @@
+
+
+### 参考数据 1 , 参考价值低。
+[root@hpcm2 logdir]# cat lsb.events | grep 206
+"JOB_NEW" "10.1" 1529421575 206 495 33554434 1 1529421575 0 0 -65535 0 0 "lsfadmin" -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 "" 116.10 2 "normal" "" "hpcm2" "" "" "" "" "" "/opt/ibm/lsfsuite" "1529421575.206" 0 "" "" "" "sleep 10" 0 "" "default" 1 "X86_64" "" "" "" "" 1040 0 "" "" "" -1 -1 -1 0 "" "" -1 "" 0 -1 "" "" 1 1041 "jfincache" 0 0 "" -1 "" -1 "" "" "" "" "" 0 -1 0 "" "" 0
+"JOB_START" "10.1" 1529421575 206 4 0 0 116.1 1 "hpcm2" "" "" 0 "" 0 "" 2147483647 4194304 "select[type == local] order[r15s:pg] " "" -1 "" -1 0 "" -1 0 0 -1 -1 7 1529421575 0 0
+"JOB_START_ACCEPT" "10.1" 1529421575 206 53265 53265 0 "" -1 "" -1 -1
+"JOB_EXECUTE" "10.1" 1529421575 206 495 53265 "/opt/ibm/lsfsuite" "/tmp/.lsbtmp495" "lsfadmin" 53265 0 "" -1 "" 0 2147483647 "" -1 "" -1 "" -1
+"JOB_STATUS" "10.1" 1529421585 206 64 0 0 0.0636 1529421585 1 0.011825 0.051799 1512 0 -1 0 0 1138 2 0 952 0 -1 0 0 0 10 2 -1 0 0 0 0 2048 2048 "" -1 "" -1 0 -1 -1 0 0
+"JOB_STATUS" "10.1" 1529421586 206 192 0 0 0.0636 1529421585 0 0 0 0 0 2048 2048 "" -1 "" -1 0 -1 -1 0 0
+
+### 参考数据 2，参考价值低。
+[root@hpcm2 PlatformLog]# cat LSB_Description.txt
+"JOB_NEW" "9.13" 1528345246 104281 1011 33833011 8 1528345246 0 0 -65535 0 0 "Klsr_yqli_01" -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ""  60.00 18 "smamem" "span[hosts=1]" "login1" "cuifc/M6-10ps/wt10/single" "" "" "%J.out" "%J.err" "/public/home/Klsr_yqli_01" "1528345246.104281" 0 "" "" "412" "#!/bin/bash;#BSUB -J 412;#BSUB -q smamem;#BSUB -o %J.out;#BSUB -e %J.err;#BSUB -n 8;#BSUB -R ""span[hosts=1]"";CURDIR=$PWD;cd $CURDIR;/public/home/Klsr_yqli_01/cuifc/LiquidLib-master/bin/computeNonGaussianParameter -i 412.in" 0 "" "default" 8 "X86_64" "" "" "" "" 6224 0 "" "" "" -1 -1 -1 0 "" "" -1 "" 0 -1 "" 0 0 0 "" -1 "" -1 "" "cuifc/M6-10ps/wt10/single" "" "" "" 0 -1 0 "" "" 0 ""
+"JOB_STARTLIMIT" "9.13" 1528345246 104281 26 "clusterName" "platform" "options" "33833011" "LSF_RLIMIT_CPU" "-1" "LSF_RLIMIT_FSIZE" "-1" "LSF_RLIMIT_DATA" "-1" "LSF_RLIMIT_STACK" "-1" "LSF_RLIMIT_CORE" "-1" "LSF_RLIMIT_RSS" "-1" "LSF_RLIMIT_NOFILE" "6513" "LSF_RLIMIT_OPEN_MAX" "6513" "LSF_RLIMIT_SWAP" "-1" "LSF_RLIMIT_RUN" "-1" "LSF_RLIMIT_PROCESS" "-1" "LSF_RLIMIT_THREAD" "-1" "JOB_RLIMIT_CPU" "-1" "JOB_RLIMIT_FSIZE" "-1" "JOB_RLIMIT_DATA" "-1" "JOB_RLIMIT_STACK" "-1" "JOB_RLIMIT_CORE" "-1" "JOB_RLIMIT_RSS" "-1" "JOB_RLIMIT_NOFILE" "-1" "JOB_RLIMIT_OPEN_MAX" "-1" "JOB_RLIMIT_SWAP" "-1" "JOB_RLIMIT_RUN" "-1" "JOB_RLIMIT_PROCESS" "-1" "JOB_RLIMIT_THREAD" "-1"
+"JOB_FINISH" "9.13" 1528345249 104281 1011 33833011 8 1528345246 0 0 1528345246 "Klsr_yqli_01" "smamem" "span[hosts=1]" "" "" "login1" "cuifc/M6-10ps/wt10/single" "" "%J.out" "%J.err" "1528345246.104281" 0 8 "node149" "node149" "node149" "node149" "node149" "node149" "node149" "node149" 64 60.0 "412" "#!/bin/bash;#BSUB -J 412;#BSUB -q smamem;#BSUB -o %J.out;#BSUB -e %J.err;#BSUB -n 8;#BSUB -R ""span[hosts=1]"";CURDIR=$PWD;cd $CURDIR;/public/home/Klsr_yqli_01/cuifc/LiquidLib-master/bin/computeNonGaussianParameter -i 412.in" 54.840834 0.679185 30140 0 -1 0 0 16115 0 0 0 8 -1 0 0 0 1933 903 -1 "" "default" 0 8 "" "" 0 32768 0 "" "" "" "" 0 "" 0 "" -1 "/Klsr_yqli_01" "" "" "" -1 "" "" 6224  "" 0 0 -1 0 32768 "select[type == local] order[r15s:pg] span[hosts=1] " "" -1 "" -1 0 "" "" 3 "cuifc/M6-10ps/wt10/single" 0 8 "node149" "node149" "node149" "node149" "node149" "node149" "node149" "node149"
+"JOB_FINISH2" "9.13" 1528345249 104281 38 "userId" "1011" "userName" "Klsr_yqli_01" "numProcessors" "8" "options" "33833011" "jStatus" "64" "submitTime" "1528345246" "termTime" "0" "startTime" "1528345246" "endTime" "1528345249" "queue" "smamem" "resReq" "span[hosts=1]" "fromHost" "login1" "cwd" "cuifc/M6-10ps/wt10/single" "outFile" "%J.out" "jobFile" "1528345246.104281" "numExHosts" "1" "execHosts" "node149" "slotUsages" "8" "cpuTime" "55.520020" "jobName" "412" "command" "#!/bin/bash;#BSUB -J 412;#BSUB -q smamem;#BSUB -o %J.out;#BSUB -e %J.err;#BSUB -n 8;#BSUB -R ""span[hosts=1]"";CURDIR=$PWD;cd $CURDIR;/public/home/Klsr_yqli_01/cuifc/LiquidLib-master/bin/computeNonGaussianParameter -i 412.in" "ru_utime" "54.840834" "ru_stime" "0.679185" "ru_maxrss" "32768" "ru_nswap" "0" "projectName" "default" "exitStatus" "0" "maxNumProcessors" "8" "exitInfo" "0" "chargedSAAP" "/Klsr_yqli_01" "numhRusages" "0" "runtime" "3" "maxMem" "32768" "avgMem" "32768" "effectiveResReq" "select[type == local] order[r15s:pg] span[hosts=1] " "subcwd" "cuifc/M6-10ps/wt10/single" "serial_job_energy" "0.000000" "numAllocSlots" "8" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149" "allocSlots" "node149"
+
+### 参考数据 3，参考价值高。
+[root@hpcm2 stream]# cat lsb.stream | grep 210
+"JOB_NEW" "10.1" 1529574491 210 495 33554435 1 1529574491 0 0 -65535 0 0 "lsfadmin" -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 "" 116.10 2 "normal" "" "hpcm2" "" "" "" "" "" "/opt/ibm/lsfsuite" "1529574491.210" 0 "" "" "JOB1" "sleep 20" 0 "" "default" 1 "X86_64" "" "" "" "" 5136 0 "" "" "" -1 -1 -1 0 "" "" -1 "" 0 -1 "" 1 1041 "jfincache" 0 0 "" -1 "" -1 "" "" "" "" "" 0 -1 0 "" "" 0 ""
+"JOB_STARTLIMIT" "10.1" 1529574491 210 26 "clusterName" "LSFS1" "options" "33554435" "LSF_RLIMIT_CPU" "-1" "LSF_RLIMIT_FSIZE" "-1" "LSF_RLIMIT_DATA" "-1" "LSF_RLIMIT_STACK" "-1" "LSF_RLIMIT_CORE" "-1" "LSF_RLIMIT_RSS" "-1" "LSF_RLIMIT_NOFILE" "4096" "LSF_RLIMIT_OPEN_MAX" "4096" "LSF_RLIMIT_SWAP" "-1" "LSF_RLIMIT_RUN" "-1" "LSF_RLIMIT_PROCESS" "-1" "LSF_RLIMIT_THREAD" "-1" "JOB_RLIMIT_CPU" "-1" "JOB_RLIMIT_FSIZE" "-1" "JOB_RLIMIT_DATA" "-1" "JOB_RLIMIT_STACK" "-1" "JOB_RLIMIT_CORE" "-1" "JOB_RLIMIT_RSS" "-1" "JOB_RLIMIT_NOFILE" "-1" "JOB_RLIMIT_OPEN_MAX" "-1" "JOB_RLIMIT_SWAP" "-1" "JOB_RLIMIT_RUN" "-1" "JOB_RLIMIT_PROCESS" "-1" "JOB_RLIMIT_THREAD" "-1"
+"JOB_START" "10.1" 1529574491 210 4 0 0 116.1 1 "hpcm2" "" "" 0 "" 0 "" 2147483647 "select[type == local] order[r15s:pg] " "" -1 "" -1 0 "" -1 0 0 -1 0 0
+"JOB_START_ACCEPT" "10.1" 1529574491 210 113154 113154 0 "" -1 "" -1 -1
+"JOB_EXECUTE" "10.1" 1529574491 210 495 113154 "/opt/ibm/lsfsuite" "/tmp/.lsbtmp495" "lsfadmin" 113154 0 "" -1 "" 0 2147483647 "" -1 "" -1 "" -1
+"JOB_RUN_RUSAGE" "10.1" 1529574499 210 0 2 0 0 0 3 113154 0 113154 0 113155 0 113154 0 113157 0 113154 0 1 113154 4
+"JOB_STATUS" "10.1" 1529574511 210 64 0 0 0.0566 1529574511 1 0.014915 0.041704 1508 0 -1 0 0 1135 2 0 1016 0 -1 0 0 0 10 3 -1 0 0 0 "" -1 "" -1 -1 0 0
+"JOB_FINISH" "10.1" 1529574511 210 495 33554435 1 1529574491 0 0 1529574491 "lsfadmin" "normal" "" "" "" "hpcm2" "" "" "" "" "1529574491.210" 0 1 "hpcm2" 64 116.1 "JOB1" "sleep 20" 0.014915 0.041704 1508 0 -1 0 0 1135 2 0 1016 0 -1 0 0 0 10 3 -1 "" "default" 0 1 "" "" 0 2048 0 "" "" "" "" 0 "" 0 "" -1 "/lsfadmin" "" "" "" -1 "" "" 5136  "" 3 1041 "jfincache" 1032 "0" 1033 "0" 0 -1 0 2048 "select[type == local] order[r15s:pg] " "" -1 "" -1 0 "" "" 20 "" 0 1 "hpcm2" -1 0
+"JOB_FINISH2" "10.1" 1529574511 210 38 "userId" "495" "userName" "lsfadmin" "numProcessors" "1" "options" "33554435" "jStatus" "64" "submitTime" "1529574491" "termTime" "0" "startTime" "1529574491" "endTime" "1529574511" "queue" "normal" "fromHost" "hpcm2" "jobFile" "1529574491.210" "numExHosts" "1" "execHosts" "hpcm2" "slotUsages" "1" "cpuTime" "0.056619" "jobName" "JOB1" "command" "sleep 20" "ru_utime" "0.014915" "ru_stime" "0.041704" "ru_maxrss" "2048" "ru_nswap" "0" "projectName" "default" "exitStatus" "0" "maxNumProcessors" "1" "exitInfo" "0" "chargedSAAP" "/lsfadmin" "numhRusages" "0" "runtime" "20" "maxMem" "2048" "avgMem" "2048" "effectiveResReq" "select[type == local] order[r15s:pg] " "serial_job_energy" "0.000000" "numAllocSlots" "1" "allocSlots" "hpcm2" "ineligiblePendingTime" "-1" "options2" "5136" "hostFactor" "116.099998"
+"JOB_STATUS" "10.1" 1529574512 210 192 0 0 0.0566 1529574511 0 0 0 0 "" -1 "" -1 -1 0 0
+
+
+create table job_log
+(
+job_id varchar(32),			JOB_NEW	/ JOB_FINISH2	4 / 4
+user varchar(32),			JOB_NEW	/ JOB_FINISH2	14 / 9
+user_group varchar(32),		
+job_name varchar(128),		JOB_NEW	/ JOB_FINISH2	42 / 39
+submit_time datetime,		JOB_NEW	/ JOB_FINISH2	3 / 17
+start_time datetime,			JOB_FINISH2		21	"startTime" ->	
+end_time datetime,			JOB_FINISH2		23
+status varchar(32),			
+time_consumed varchar(32),		JOB_FINISH2		64	runtime->
+queue varchar(32),			JOB_NEW	/ JOB_FINISH2	29 / 25
+cpu_weight float,
+nodes varchar(32),			JOB_FINISH2		33	"execHosts" ->
+core_number int,			JOB_FINISH2		35	"slotUsages" ->
+expense float
+);
+
+
+### 未处理情况
+MariaDB [portal]> select * from job_log where job_id=92789;
++--------+-------------+------------+----------+---------------------+---------------------+---------------------+--------+---------------+-------+------------+---------+-------------+----------+-----------+---------+----------+
+| job_id | user        | user_group | job_name | submit_time         | start_time          | end_time            | status | time_consumed | queue | cpu_weight | nodes   | core_number | cpu_time | exit_info | expense | accurate |
++--------+-------------+------------+----------+---------------------+---------------------+---------------------+--------+---------------+-------+------------+---------+-------------+----------+-----------+---------+----------+
+| 92789  | gws_ljan_04 | NA         | NA       | 2018-05-29 17:32:08 | 2018-05-29 17:32:25 | 2018-06-21 20:11:54 | NA     | 1996769       | gpu   |          1 | node203 |           1 | 0.000000 | 0         |       0 | Y        |
+| 92789  | gws_ljan_04 | NA         | NA       | 2018-05-29 17:32:08 | 2018-06-21 21:25:30 | 2018-06-21 21:25:31 | NA     | 1996770       | gpu   |          1 | node203 |           1 | 0.025726 | 0         |       0 | Y        |
++--------+-------------+------------+----------+---------------------+---------------------+---------------------+--------+---------------+-------+------------+---------+-------------+----------+-----------+---------+----------+
+2 rows in set (0.04 sec)
+
+
+
+
+[root@admin1 log]# bugroup 
+GROUP_NAME    USERS                     
+ljan         gws_ljan_01 gws_ljan_02 gws_ljan_03 gws_ljan_04 gws_ljan_05 gws_ljan_06 
+zysun        gws_zysun_01 gws_zysun_02 gws_zysun_03 gws_zysun_04 
+lsfadmins    lsfadmin 
+
+
+[root@admin1 log]# cat /public/lsf/conf/lsbatch/platform/configdir/lsb.users
+# $Revision$Date$
+
+# User groups can be referenced by the lsb.hosts and lsb.queues files.
+
+# All the example definitions here are commented out
+
+Begin UserGroup
+GROUP_NAME       GROUP_MEMBER              USER_SHARES            #GROUP_ADMIN
+ljan   (gws_ljan_01  gws_ljan_02  gws_ljan_03  gws_ljan_04 gws_ljan_05 gws_ljan_06)    ()  #  li liangyi
+zysun    (gws_zysun_01 gws_zysun_02 gws_zysun_03 gws_zysun_04 gws_zysun_05 gws_zysun_06 gws_zysun_07 gws_zysun_08 gws_zysun_09)         ()
+xhwang        (cbl_xhwang_01 cbl_xhwang_02)    ()
+yqli         (Klsr_yqli_01  Klsr_yqli_02)   ()
+wj           (Skleac_wj_01  Skleac_wj_02)     ()
+tfshi        (gws_tfshi_01)    ()
+luocf        (gws_luocf_01)    ()
+xbzhang      (Reru_xbzhang_01)     ()
+xjliu        (Reru_xjliu_01)      ()
+zjwu         (Reru_zjwu_01)      ()
+cw            (dfx_cw_01)         ()
+zjli          (dfx_zjli_01)       ()
+#ugroup1         (user1 user2 user3 user4) ([user1, 4] [others, 10])   #(user1 user2[full])
+#ugroup2         (all)                     ([user3, 10] [others, 15])  #(user3[usershares])
+#ugroup3         (ugroup1 user5 user6 user7)     ([user5, 16] [user6, 34] [user7, 15] [ugroup1, 40])  #()
+End UserGroup
+
+Begin User
+USER_NAME        MAX_PEND_JOBS
+#user1           800            # user1 has pend threshold of 800 
+#ugroup1@        500            # each user in ugroup1 has threshold of 100 
+#ugroup1         1000           # collectively ugroup1 has threshold of 1000
+#default         100            # default, any user/group has threshold of 100
+End User
+
+# User group for all LSF administrators
+Begin UserGroup
+GROUP_NAME    GROUP_MEMBER      #USER_SHARES # Key words
+lsfadmins     (lsfadmin )
+End UserGroup
+
+
+
+
+### 聚合操作
+SELECT user, SUM(expense) AS expense FROM job_log GROUP BY user;
+SELECT user_group, SUM(expense) AS expense FROM job_log GROUP BY user_group;
+SELECT user, SUM(expense) AS expense FROM job_log where submit_time>'2018-06-20' GROUP BY user ;
+SELECT user_group, SUM(expense) AS expense FROM job_log where submit_time>'2018-06-20' GROUP BY user_group ;
+
+
+
+
+
+
