@@ -1,5 +1,5 @@
-// 2018-02-16
-// PeraLS, LicenseStatistic, Initialization, Portal.
+// 
+// GridLS, LicenseStatistic, Initialization, Portal.
 package portal; 
 import java.io.*;
 import java.sql.*;
@@ -745,7 +745,7 @@ public class Utility{
 		*/
 		
 		/*
-		String s1 = new String("2019-01-20 22:24:00");
+		String s1 = new String("2022-01-20 22:24:00");
 		Date d1 = Utility.stringToDate(s1);
 		System.out.println(d1);
 		long d1l = d1.getTime();
@@ -801,7 +801,7 @@ public class Utility{
 		*/
 		
 		/*
-		String outputDate = Utility.addCalendar("2018-05-29", 5);
+		String outputDate = Utility.addCalendar("2022-05-29", 5);
 		System.out.println(outputDate);
 		*/
 			
