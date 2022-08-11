@@ -1,5 +1,5 @@
 source /opt/tomcat/profile
-
+ 
 FP=0
 if [ -f "/opt/tomcat/java/PlatformLog/PlatformLog.out" ];then
 echo "File PlatformLog.out exists!"

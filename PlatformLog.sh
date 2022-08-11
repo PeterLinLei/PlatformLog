@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 source /opt/tomcat/profile
 cd /opt/tomcat/java/PlatformLog/
 # P0: jar file; P1: root directory; P2: lsb.stream file path; P3: file pointer; P4: update rusage status interval; P5: sleep interval. 

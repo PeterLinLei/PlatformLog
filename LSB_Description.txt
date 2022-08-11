@@ -1,4 +1,4 @@
-
+  
 
 ### 参考数据 1 , 参考价值低。
 [root@hpcm2 logdir]# cat lsb.events | grep 206
